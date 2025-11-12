@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hover Text Change Example</title>
+</head>
+<body>
+  <p id="myParagraph">Hover over this text to change it!</p>
+
+  <script>
+    const para = document.getElementById("myParagraph");
+
+    
+    para.addEventListener("mouseover", function() {
+      para.textContent = "You hovered over the text! 😄";
+    });
+
+    
+    para.addEventListener("mouseout", function() {
+      para.textContent = "Hover over this text to change it!";
+    });
+  </script>
+</body>
+</html>
